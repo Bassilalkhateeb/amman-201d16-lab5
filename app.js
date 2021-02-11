@@ -10,7 +10,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) {
   let c = 4 + 7;
-  let arrayOne=[c,'The sum of 4 and 7 is 11'+'.'];
+  let d = 'The sum of 4 and 7 is 11'+'.';
+  let arrayOne=[c,d];
   return(arrayOne);
   //eslint-disable-line
 }
@@ -31,7 +32,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   let c = 5 * 9;
-  let arrayTow=[c,'The product of 5 and 9 is 45'+'.'];
+  let d = 'The product of 5 and 9 is 45'+'.';
+  let arrayTow=[c,d];
   return(arrayTow);
   //eslint-disable-line
 }
@@ -54,11 +56,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
+  let e = 4 + 7 + 5;
+  let d = 4 * 7 * 5;
+  let f = '4 and 7 and 5 sum to 16'+'.';
+  let g = 'The product of 4 and 7 and 5 is 140'+'.';
+  let arrayThree=[e,d,f,g];
+  return(arrayThree);
   //eslint-disable-line
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
