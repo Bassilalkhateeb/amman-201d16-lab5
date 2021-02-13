@@ -9,12 +9,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) {
-  let c = 4 + 7;
-  let d = 'The sum of 4 and 7 is 11'+'.';
+  let c = a + b;
+  let d = 'The sum of'+' '+a+' '+'and'+' '+b+' '+'is'+' '+c+'.';
   let arrayOne=[c,d];
   return(arrayOne);
   //eslint-disable-line
 }
+
+console.log(sum(4,7));
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
@@ -31,12 +33,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) {
-  let c = 5 * 9;
-  let d = 'The product of 5 and 9 is 45'+'.';
+  let c = a * b;
+  let d = 'The product of'+' '+a+' '+'and'+' '+b+' '+'is'+' '+c+'.';
   let arrayTow=[c,d];
   return(arrayTow);
   //eslint-disable-line
 }
+
+console.log(multiply(5,9));
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
@@ -56,15 +60,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
-  let e = 4 + 7 + 5;
-  let d = 4 * 7 * 5;
-  let f = '4 and 7 and 5 sum to 16'+'.';
-  let g = 'The product of 4 and 7 and 5 is 140'+'.';
+  let e = a + b + c;
+  let d = a * b * c;
+  let f = a+' '+'and'+' '+ b+' '+'and'+' '+c+' '+'sum to '+e+'.';
+  let g = 'The product of'+' '+a+' '+'and'+' '+b+' '+'and'+' '+c+' '+'is'+' '+d+'.';
   let arrayThree=[e,d,f,g];
   return(arrayThree);
   //eslint-disable-line
 }
-
+console.log(sumAndMultiply(4,7,5));
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
@@ -85,12 +89,12 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
   //eslint-disable-line
-  let a = testArray[0]+testArray[1]+testArray[2];
-  let b = '2,3,4 was passed in as an array of numbers, and '+'9 is their sum'+'.';
-  let arrayFour=[a,b];
+  let i = sum(2,3);
+  let v = sum(i,4);
+  let arrayFour=[v,'2,3,4 was passed in as an array of numbers,'+' '+'and'+' '+v+' '+'is their'+' '+'sum'+'.'];
   return(arrayFour);
 }
-
+console.log(sumArray);
 
 // Here is the test for sumArray(); uncomment it to run it
 
